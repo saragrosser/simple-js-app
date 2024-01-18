@@ -1,0 +1,57 @@
+/* colors used 
+    background-color;#856d02
+    text-color--white--: #ffffff;
+*/
+:root {  
+    --font-family: 'Lora', sans-serif;
+    --font-weight-normal: 400;
+    --font-size-normal: 16px;
+    --line-height-normal: 1.6;
+    --link-color: #06333b;
+    --link-visited-color: #383a05;
+    --link-active-color: #2d604b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #856d02;
+    text-align: center;
+    color: white;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-normal);
+    line-height: var(--line-height-normal);
+}
+a {
+    font-size: 28px; 
+}
+a {
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--link-visited-color);
+}
+
+a:active {
+    color: var(--link-active-color);
+}
+.app-container{
+    width: 400px;
+    margin: 0 auto;
+
+}
+.headline{
+    border: white solid 1px;
+
+}
+h1 {
+    font-size: var(--font-size-normal);
+    font-family: var(--font-family);
+}
+h2{
+    font-size: 28px;
+}
