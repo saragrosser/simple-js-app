@@ -10,6 +10,9 @@
     --link-color: #06333b;
     --link-visited-color: #383a05;
     --link-active-color: #2d604b;
+    --button-hover-color: #5E5F42;
+    --button-active-color: #4f5205;
+    --button-focus-border-color: #DBC62C;
 }
 
 * {
