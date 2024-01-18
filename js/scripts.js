@@ -18,11 +18,11 @@ let pokemonList = [
     console.log(pokemonList); 
     
     // Print the list of names from pokemonList and corresponding height of that name
-    for (let i = 0; i < pokemonList.length; i++) {
+    pokemonList.forEach (function (pokemon){
         // Print a message if the height is bigger than 5
-        if (pokemonList[i].height > 5) {
-            document.write('<p>' + pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') - Wow, that\'s big!</p>');
+        if (pokemon.height > 5) {
+            document.write('<p>' + pokemon.name + ' - ' + pokemon.height + 'Wow, that\'s big!</p>');
         } else {
-            document.write('<p>' + pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')</p>');
+            document.write('<p>' + pokemon.name + ' - ' + pokemon.height + ';</p>');
         }
-    }
+    });
