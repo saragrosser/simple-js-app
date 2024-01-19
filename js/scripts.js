@@ -29,14 +29,16 @@ let pokemonRepository = (function () {
     }
 })();
 
-console.log(pokemonRepository);
+console.log(pokemonRepository.getAll());
 
-// Print the list of names from pokemonList and corresponding height of that name
 pokemonRepository.getAll().forEach(function (pokemon) {
-    // Print a message if the height is bigger than 5
-    if (pokemon.height > 5) {
-        document.write('<p>' + pokemon.name + ' - ' + pokemon.height + ';' + 'Wow, that\'s big!</p>');
-    } else {
-        document.write('<p>' + pokemon.name + ' - ' + pokemon.height + ';</p>');
-    }
+    // Select the pokemon list element from the DOM
+    let pokemonList = document.querySelector ('.pokemon-list');
+    let listpokemon = document.createElement ('li');
+    let button = document.createElement ('button');
+    button.innerText = pokemon.name;
+    button.classList.add ('button-class');
+    listpokemon.appendChild(button);
+    pokemonList.appendChild (listpokemon);
+
 });
