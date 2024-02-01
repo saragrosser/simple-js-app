@@ -1,5 +1,5 @@
 /* colors used 
-    background-color;#856d02
+    background-color;#FFE6B7
     text-color--white--: #ffffff;
 */
 :root {  
@@ -20,7 +20,7 @@
 }
 
 body {
-    background-color: #856d02;
+    background-color: #FFE6B7;
     color: black;
     font-family: var(--font-family);
     font-weight: var(--font-weight-normal);
